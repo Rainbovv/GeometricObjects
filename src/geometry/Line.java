@@ -14,19 +14,19 @@ public class Line {
 		  
 		if(startX == endX && startY == endY) {
 			System.err.println("CAN NOT CREATE A DOT! " + 
-					  		   "ENTER A VALID COORDS FOR A LINE.");
+					   "ENTER A VALID COORDS FOR A LINE.");
 		}
 		else if(startX > endX) {
 			this.startY = startY;
-		    this.startX = endX;
-		    this.endX   = startX;
-		    this.endY   = endY;	       
+		    	this.startX = endX;
+		    	this.endX   = startX;
+		    	this.endY   = endY;	       
 		}
 		else {
-		    this.startY = startY;
-		    this.startX = startX;
-		    this.endX   = endX;
-		    this.endY   = endY;
+			this.startY = startY;
+			this.startX = startX;
+			this.endX   = endX;
+			this.endY   = endY;
 		}
 	}
 	
@@ -34,7 +34,7 @@ public class Line {
 	public int length() {
 		  
 		 return (int)Math.round(Math.sqrt(Math.pow(endX - startX, 2) + 
-				  	  	 		Math.pow(endY - startY, 2)));
+				  	  	  Math.pow(endY - startY, 2)));
 	}
 	
 	// Getters 
@@ -69,7 +69,7 @@ public class Line {
 			System.err.println("THE OBJECT IS NOT A LINE!");
 		else 
 			System.out.printf("[%d:%d]----->[%d:%d]%n",
-				  			startX, startY, endX, endY);
+				  	  startX, startY, endX, endY);
 	}
 	
 }
